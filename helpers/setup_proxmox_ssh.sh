@@ -4,12 +4,12 @@
 #
 
 set -e
-
+#Fillin your server Details
 # === CONFIG ===
-SSH_USER="root"
-SSH_HOST="10.0.0.6"
+SSH_USER=""
+SSH_HOST=""
 SSH_PORT="22"
-SSH_KEY="$HOME/.ssh/cuey"
+SSH_KEY="$HOME/.ssh/"
 # ==============
 
 echo "🔧 Setting up SSH key for $SSH_USER@$SSH_HOST..."
