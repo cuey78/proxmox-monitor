@@ -12,7 +12,7 @@ It communicates securely over SSH and updates at regular intervals, so you can k
 - 🧊 Displays CPU temperature, HDD temperatures, load averages, memory use, and uptime  
 - 🔁 Configurable refresh interval  
 - 🧩 Customizable panel placement (left, center, right)  
-- ⚙️ Optional key-based authentication using your SSH private key  
+- ⚙️ key-based authentication using your SSH private key  
 - 🧠 Asynchronous SSH execution — **no more UI lag or freezes**  
 - 🕐 Tooltip + popup menu with full server stats and last update time  
 
