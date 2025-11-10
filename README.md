@@ -35,7 +35,30 @@ It communicates securely over SSH and updates at regular intervals, so you can k
 
 ## ⚙️ Setup Instructions
 
-scp the proxmox-monitor.sh to your servers /tmp dir 
-you need a passwordless ssh key setup a script is inclued to do this -  setup_proxmox_ssh.sh will need to edit user and server details inside the script
-copy the proxmox-monitor@github.com folder to your /home/user/.local/share/gnome-shell/extensions
-log out and back in and enable in extension manager enter details in the settings
+Step 1: Deploy the Monitoring Script
+scp proxmox-monitor.sh root@your-proxmox-server:/tmp/
+ssh root@your-proxmox-server "chmod +x /tmp/proxmox-monitor.sh"
+
+Step 2: Set Up Passwordless SSH Authentication
+# Edit the setup script with your server details first
+nano setup_proxmox_ssh.sh
+
+# Make executable and run
+chmod +x setup_proxmox_ssh.sh
+./setup_proxmox_ssh.sh
+
+Step 3: Install the GNOME Extension
+cp -r proxmox-monitor@github.com ~/.local/share/gnome-shell/extensions/
+
+Step 4: Activate the Extension
+- Log out and log back into your GNOME session
+- Open the Extensions application
+- Enable "Proxmox Server Monitor"
+
+Step 5: Configure Connection Settings
+- Open extension settings
+- Enter your Proxmox server details
+- Server Host: Your Proxmox server IP/hostname
+- SSH Port: (default: 22)
+- Username: SSH username (usually 'root')
+- Identity File: Path to SSH private key (if using custom key)
