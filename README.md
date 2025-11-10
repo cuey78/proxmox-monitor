@@ -29,7 +29,7 @@ It communicates securely over SSH and updates at regular intervals, so you can k
 ### On your Proxmox (server)
 - `smartmontools` *(for SMART disk temps)*
 - `lm_sensors` *(for CPU temps)*
-- `hddtemp-lt` for extended disk support
+- `hddtemp-lt` for extended disk support - https://github.com/slowpeek/hddtemp
 
 ---
 
