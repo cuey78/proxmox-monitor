@@ -1,4 +1,4 @@
-# 🧠 Proxmox Server Monitor (GNOME Extension)
+# Proxmox Server Monitor (GNOME Extension)
 
 **Proxmox Server Monitor** is a GNOME Shell extension that displays real-time system information from a remote **Proxmox server** — including CPU temperature, disk temperatures, memory usage, and uptime — directly in your top panel.
 
