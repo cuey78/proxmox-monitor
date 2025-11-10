@@ -24,7 +24,7 @@ It communicates securely over SSH and updates at regular intervals, so you can k
 - GNOME Shell 48, 49, or newer  
 - `ssh` command available  
 - A working SSH key that allows passwordless login to your Proxmox server  
-- The `gnome-shell-extension-prefs` tool to configure the extension
+- The `gnome-shell-extension-manager` tool to configure the extension
 
 ### On your Proxmox (server)
 - `smartmontools` *(for SMART disk temps)*
@@ -35,5 +35,7 @@ It communicates securely over SSH and updates at regular intervals, so you can k
 
 ## ⚙️ Setup Instructions
 
-
-
+scp the proxmox-monitor.sh to your servers /tmp dir 
+you need a passwordless ssh key setup a script is inclued to do this -  setup_proxmox_ssh.sh will need to edit user and server details inside the script
+copy the proxmox-monitor@github.com folder to your /home/user/.local/share/gnome-shell/extensions
+log out and back in and enable in extension manager enter details in the settings
