@@ -1,0 +1,13 @@
+{
+    "uuid": "proxmox-monitor@github.com",
+    "name": "Proxmox Server Monitor", 
+    "description": "Monitors Proxmox server status with temperature monitoring",
+    "shell-version": [
+        "48",
+        "49",
+        "50"
+    ],
+    "url": "https://github.com/cuey78/proxmox-monitor",
+    "settings-schema": "org.gnome.shell.extensions.proxmox-monitor",
+    "version": 1
+}
